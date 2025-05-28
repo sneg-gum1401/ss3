@@ -1,0 +1,34 @@
+? 1.4. есть 4 числа a, b, c, d, гарантируется, что a > b > c > d, задаётся число x, выведите логичкое выражение, между какими 2 переменными находится x или он меньше всех / больше всех. ответ в формате b > x > c и т.п.
+start
+new a number
+new b number
+new c number
+new d number
+new x number
+set a 10
+set b 8
+set c 6
+set d 4
+set x 7
+if (x > a)
+    log string "x > a"
+close
+if (a > x)
+    if (x > b)
+        log string "a > x > b"
+    close
+close
+if (b > x)
+    if (x > c)
+        log string "b > x > c"
+    close
+close
+if (c > x)
+    if (x > d)
+        log string "c > x > d"
+    close
+close
+if (d > x)
+    log string "x < d"
+close
+finish
