@@ -1,0 +1,12 @@
+? 1.2. по такому же принципу определить, хватает ли нам денег чтобы купить какой-то товар
+start
+new money number
+new price number
+set money 100
+set price 50
+if (money > price)
+    log string "Денег хватает"
+else
+    log string "Денег не хватает"
+close
+finish
